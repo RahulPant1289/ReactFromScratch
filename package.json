@@ -2,11 +2,10 @@
   "name": "reactfromscratch",
   "version": "1.0.0",
   "description": "This is for learning react",
-  "app": "App.js",
   "scripts": {
     "test": "jest",
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "parcel react.html",
+    "build": "parcel build react.html"
   },
   "repository": {
     "type": "git",
