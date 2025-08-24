@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import ContactUs from "./src/components/ContactUs";
 import About from "./src/components/About";
+import Fun from "./src/components/Fun";
 
 const Heading = () => <h1>Learning React...!!!</h1>;
 const Description = () => (
@@ -20,6 +21,12 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs />,
+        children: [
+          {
+            path: "fun",
+            element: <Fun />,
+          },
+        ],
       },
       {
         path: "/about",
