@@ -1,18 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ContactUs from "./src/components/ContactUs";
 import About from "./src/components/About";
 import Fun from "./src/components/Fun";
+import Description from "./src/components/Description";
+import Posts from "./src/components/Posts";
+import PostDetail from "./src/components/PostDetail";
 
-const Heading = () => <h1>Learning React...!!!</h1>;
-const Description = () => (
-  <div>
-    <Heading />
-    <h1 id="heading">Namaste React</h1>
-    <Outlet />
-  </div>
-);
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,6 +26,14 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/posts",
+        element: <Posts />,
+      },
+      {
+        path: "/posts/:id",
+        element: <PostDetail />,
       },
     ],
   },
