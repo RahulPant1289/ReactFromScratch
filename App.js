@@ -7,11 +7,12 @@ import Fun from "./src/components/Fun";
 import Description from "./src/components/Description";
 import Posts from "./src/components/Posts";
 import PostDetail from "./src/components/PostDetail";
+import ContactUsClass from "./src/components/ContactUsClass";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Description />,
+    element: <ContactUsClass />,
     children: [
       {
         path: "/contact",
